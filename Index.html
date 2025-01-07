@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercices de révision</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Lien et images</h1>
+        <nav>
+            <a href="https://www.wikipedia.org" target="_blank">La page principale de Wikipedia</a>
+        </nav>
+        <br>
+        <section>
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Logo">
+        </section>
+
+        <hr>
+        <h1>Des éléments !</h1>
+        <section>
+            <input type="text" id="premiers-pas" name="premiers-pas" placeholder="Entrez du texte">
+        </section>
+        <br>
+        <section>
+            <label id="choix1"><input type="radio" name="choix" value="1"> Choix 1</label>
+            <label id="choix2"><input type="radio" name="choix" value="2"> Choix 2</label>
+            <label id="choix3"><input type="radio" name="choix" value="3"> Choix 3</label>
+        </section>
+        <br>
+        <section>
+            <input type="password" id="password" name="password" placeholder="Mot de passe">
+        </section>
+        <br>
+        <section>
+            <label for="volume">0</label>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+            <label for="volume">Volume</label>
+        </section>
+        <br>
+        <section>
+            <label>
+                Mute 
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </label>
+        </section>
+        <br>
+        <section>
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date">
+            <span id="selected-year"></span>
+        </section>
+        <br>
+        <section>
+            <button type="button" onclick="alert('Bouton OK cliqué')">Ok</button>
+        </section>
+
+        <hr>
+        <h1>Barre de progression</h1>
+        <section>
+            <div>
+                <label for="telechargement">Téléchargement en cours :</label>
+                <progress id="telechargement" value="0" max="100"></progress>
+            </div>
+            <br>
+            <div class="storage-container">
+                <label for="espace">Espace disponible :</label>
+                <div class="storage-bar">
+                    <div class="storage-bar-inner" id="storage-bar-inner" style="width: 0%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <script src="script.js"></script>
+    </body>
+</html>
