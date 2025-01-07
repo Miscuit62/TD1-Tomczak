@@ -1,0 +1,24 @@
+img {
+    width: 250px;
+    height: auto;
+}
+
+.storage-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.storage-bar {
+    width: 100px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+.storage-bar-inner {
+    height: 100%;
+    background-color: #4caf50;
+}
